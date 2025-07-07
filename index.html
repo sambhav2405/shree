@@ -232,6 +232,29 @@
             <a>Shipping policy</a>
         </div>
     </footer>
+  <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBDRa7yBCxLNTPMxta5ATmKNRM5VSjqQkQ",
+    authDomain: "sambhav-bc4c3.firebaseapp.com",
+    projectId: "sambhav-bc4c3",
+    storageBucket: "sambhav-bc4c3.firebasestorage.app",
+    messagingSenderId: "75859083035",
+    appId: "1:75859083035:web:eb08d36604609701751dbe"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // ✅ Define global auth & db
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+
       <script src="gpt.js"></script>
 </body>
 </html>
